@@ -20,8 +20,8 @@ txxt2 = """
               Type Continue If else
 """ 
 print(Fore.LIGHTCYAN_EX, text)
-print(Fore.LIGHTRED_EX, txxt2)
-opt = input(Fore.RED, "(main)<$")
+print(Fore.LIGHTRED_EX, txxt2, Fore.GREEN)
+opt = input("(main):")
 if opt == 'Continue':
     print('[+]  Starting')
 TCP_IP = '127.0.0.1'
