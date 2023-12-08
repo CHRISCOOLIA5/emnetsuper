@@ -1,16 +1,29 @@
 #!/usr/bin/env python
  
 import socket
+import colorama
+from colorama import Fore
 text = """
-███████╗███╗   ███╗███╗   ██╗███████╗████████╗    
-██╔════╝████╗ ████║████╗  ██║██╔════╝╚══██╔══╝    
-█████╗  ██╔████╔██║██╔██╗ ██║█████╗     ██║       
-██╔══╝  ██║╚██╔╝██║██║╚██╗██║██╔══╝     ██║       
-███████╗██║ ╚═╝ ██║██║ ╚████║███████╗   ██║       
-╚══════╝╚═╝     ╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝       
-                                                  
+███████╗███╗   ███╗███╗   ██╗███████╗████████╗    S
+██╔════╝████╗ ████║████╗  ██║██╔════╝╚══██╔══╝    E
+█████╗  ██╔████╔██║██╔██╗ ██║█████╗     ██║       R
+██╔══╝  ██║╚██╔╝██║██║╚██╗██║██╔══╝     ██║       V
+███████╗██║ ╚═╝ ██║██║ ╚████║███████╗   ██║       E
+╚══════╝╚═╝     ╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝       R
+        2023-2024 All Rights Reserved © 
+"""
+txxt2 = """          
+╔════════════════════════════════════════════════╗       
+║   !WARNING! (SERVER IS VUNERABLE TO ATTACKS)   ║
+║      Type Dev Menu/Setting to Access Them      ║
+╚════════════════════════════════════════════════╝
+              Type Continue If else
 """ 
-print(text)
+print(Fore.LIGHTCYAN_EX, text)
+print(Fore.LIGHTRED_EX, txxt2)
+opt = input(Fore.RED, "(main)<$")
+if opt == 'Continue':
+    print('[+]  Starting')
 TCP_IP = '127.0.0.1'
 TCP_PORT = 8000
 BUFFER_SIZE = 20  # Normally 1024, but we want fast response
